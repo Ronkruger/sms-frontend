@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="light-style  customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Richwell Colleges</title>
+
+  <meta name="description" content="" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="assets/vendor/css/core.css" />
+  <link rel="stylesheet" href="assets/vendor/css/theme-default.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+   
+    #section{
+      width: 100%;
+      height: 100vh;
+      margin-top: 20px;
+    }
+    .richwell-logo{
+      filter: brightness(1);
+    }
+    .nav{
+      display: flex;
+      justify-content: space-between;
+    }
+    .about{
+     
+      color: black;
+      margin-right: 30px;
+      font-size: 23px;
+    }
+    .about:hover{
+      color: #575454;
+      text-decoration:underline;
+    }
+    /*landing page*/
+.redirect-portal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80%;
+  left: 43%;
+  background-color: #2F58CD;
+  
+  color: black;
+  border: 3px solid black;
+  width: 200px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+.redirect-portal:hover {
+  transform: scale(1.2);
+  filter: brightness(0.9);
+}
+.redirect-portal a{
+  color:#fff;
+}
+.h-bl{
+  color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+/*landing page*/
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: #ECF9FF;
+        color: black;
+      }
+      #bg-video {
+     display: none;
+  
+      }
+      .redirect-portal{
+      position: absolute;
+      top: 57%;
+      left: 23%;
+      }
+      .redirect-portal:hover {
+        transform: scale(1.2);
+        filter: brightness(0.9);
+      }
+      .about{
+        color: black;
+      }
+      .about:hover{
+        color: gray;
+      }
+      .app-brand-logo{
+        width: 190px;
+        height: 180px;
+      }
+      .txt{
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--reference for the video:
+  https://www.facebook.com/watch/?v=1209885039358877-->
+
+<!---
+  <video id="bg-video" autoplay loop muted>
+    <source src="assets/video-bg/richwell.mp4" type="video/mp4">
+  </video>
+---->
+  <!-- Content -->
+            <main>
+               <h1 class="h-bl">school management system</h1>
+              <div class="redirect-portal">
+               
+                <a href="html/auth-login-basic.html">GO TO STUDENT PORTAL</a>
+              </div>
+            </main>
+            
+            <section id="section">
+              <nav class="nav">
+                <a href=".//index.html" class="app-brand-link">
+                  <span class="app-brand-logo">
+                 <!--richwell logo-->
+                 <img src="assets/img/icons/brands/school-icon.svg" alt="" width="100" height="100" class="richwell-logo">   
+                  <span class="app-brand-text menu-text fw-bolder ms-2 txt">SCHOOL MANAGEMENT SYSTEM</span>
+                </a>
+                <a href="html/about.html" class="about">About</a>
+              </nav>
+             <!--this section serves as space to move down the footer-->
+            </section>
+  <!-- / Content -->
+           <!-- Footer -->
+           <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+           
+                
+              </div>
+              <div>
+                  Powered By:
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">Sneat- themeselection | Ron </a>
+                </div>
+         
+              </div>
+         
+            </div>
+          </footer>
+          <!-- / Footer -->
+</body>
+
+</html>
